@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <meta name="theme-color" content="#1A3D63" />
+    <meta name="description" content="Poultry Technology & Innovation Council (PTIC) Stakeholder Web Application — connecting farmers, experts, technology providers, and industry leaders." />
+    <title>PTIC — Poultry Technology & Innovation Council</title>
+
+    <!-- Prevent Theme Flash -->
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('ptic-theme');
+          var isDark = saved === 'dark' || ((!saved || saved === 'system') && window.matchMedia('(prefers-color-scheme: dark)').matches);
+          if (isDark) {
+            document.documentElement.classList.add('dark');
+            document.documentElement.style.colorScheme = 'dark';
+          } else {
+            document.documentElement.classList.remove('dark');
+            document.documentElement.style.colorScheme = 'light';
+          }
+        } catch (e) {}
+      })();
+    </script>
+
+    <!-- Google Fonts: Plus Jakarta Sans & Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet" />
+    <script type="module" crossorigin src="/assets/index-jmMSl3xM.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-fZPJDjEQ.css">
+  </head>
+  <body class="bg-[#F8FAFC] text-[#172B2F] font-sans antialiased selection:bg-[#135E69]/20 selection:text-[#135E69] overflow-x-hidden min-h-screen">
+    <div id="root"></div>
+  </body>
+</html>
